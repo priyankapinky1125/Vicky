@@ -1,0 +1,52 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting the background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #FF5733, #FFBD33, #75FF33, #33FFF5, #3375FF, #A833FF);
+    background-size: 300% 300%;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    animation: gradient 10s ease infinite;
+}
+
+/* Centered container */
+.container {
+    text-align: center;
+}
+
+/* Main message styling */
+.message {
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: bounce 1s infinite alternate;
+}
+
+/* Subtext styling */
+.subtext {
+    font-size: 1.5em;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+/* Gradient background animation */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Text bounce animation */
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
